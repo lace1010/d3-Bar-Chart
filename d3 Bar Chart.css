@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #708090;
+  display: flex; /* flex and following two lines center the chart*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#chart-container {
+  width: 700px;
+  height: 480px;
+  background-color: white;
+  box-shadow: 2px 2px 20px black;
+}
+
+#tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  background-color: #e4e4e4;
+  border-radius: 2px;
+  box-shadow: 1px 1px 10px black;
+  font-weight: 100;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+#yScale-text {
+  fill: #708090;
+  font-weight: 100;
+}
+
+#more-info-text {
+  fill: #708090;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.bar {
+  fill: #33adff;
+  border: 0.1px solid white;
+}
+
+.bar:hover {
+  fill: white;
+}
+
+#author {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#my-link {
+  display: block;
+  margin-top: 0.3rem;
+  text-decoration: none;
+}
